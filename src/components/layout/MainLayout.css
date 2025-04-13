@@ -1,0 +1,164 @@
+/* MainLayout.css */
+.layout {
+  background-color: #212933;
+  display: grid;
+  grid-template-areas:
+    "ribbon ribbon ribbon"
+    "properties content projectNavigator"
+    "footer footer footer";
+  grid-template-columns: 15% 1fr 15%;
+  gap: 4px;
+  height: 100vh;
+  width: 100vw;
+}
+
+.ribbon {
+  grid-area: ribbon;
+  background-color: #212933;
+  border: 1px solid #ccc;
+  height: 80px;
+  padding: 1px;
+  display: flex; /* Para alinhar os elementos dentro */
+  align-items: center; /* Alinhar verticalmente ao centro */
+  padding-left: 20px; /* Adicionar um pouco de espaço à esquerda */
+  gap: 20px; /* Espaçamento entre os grupos de botões/controles */
+}
+
+.ribbon > div {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.ribbon button {
+  padding: 8px 16px;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.ribbon button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.ribbon button:first-child {
+  background-color: #3498db; /* Import IFC */
+}
+
+.ribbon button:nth-child(2) {
+  background-color: #e74c3c; /* Export SVG */
+}
+
+.ribbon label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: white;
+}
+
+.ribbon input[type="range"] {
+  width: 100px; /* Ajuste a largura conforme necessário */
+}
+
+.properties {
+  grid-area: properties;
+  background-color: #3a4453;
+  border: 1px solid #ccc;
+  padding: 10px; /* Adicione algum padding interno */
+  color: white; /* Cor do texto para o painel de propriedades */
+}
+
+.content {
+  grid-area: content;
+  background-color: #3a4453;
+  border: 1px solid #99a;
+  display: flex;
+  flex-direction: column;
+}
+
+.tabs {
+  display: flex;
+  flex-direction: column;
+  height: 100%; /* Ocupar toda a altura disponível */
+}
+
+.tab-list {
+  display: flex;
+  background-color: #212933; /* Cor de fundo da lista de abas */
+  border-bottom: 1px solid #ccc;
+}
+
+.tab-button {
+  padding: 10px 15px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #ccc;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.tab-button:hover {
+  background-color: #3a4453;
+  color: white;
+}
+
+.tab-button.active {
+  background-color: #3a4453;
+  color: white;
+}
+
+.tab-panels {
+  flex: 1; /* O painel de conteúdo ocupa o espaço restante */
+  overflow: auto; /* Adicionar barra de rolagem se o conteúdo for grande */
+  background-color: #f8f9fa; /* Cor de fundo dos painéis */
+  padding: 16px; /* Espaçamento interno nos painéis */
+}
+
+.tab-panel {
+  height: 100%; /* O painel ocupa toda a altura disponível */
+}
+
+.three-d-container {
+  flex: 1;
+  display: flex;
+  overflow: auto;
+  height: 100%; /* O container 3D ocupa toda a altura do painel */
+}
+
+.three-d-viewport {
+  width: 100%;
+  height: 100%;
+  background-color: #202020;
+}
+
+.drawing-container {
+  flex: 1;
+  display: flex;
+  padding: 16px;
+  overflow: auto;
+  height: 100%; /* O container de desenho ocupa toda a altura do painel */
+}
+
+.projectNavigator {
+  grid-area: projectNavigator;
+  background-color: #3a4453;
+  border: 1px solid #ccc;
+  padding: 10px; /* Adicione algum padding interno */
+  color: white; /* Cor do texto para o navegador de projetos */
+}
+
+.footer {
+  grid-area: footer;
+  background-color: #3a4453;
+  border: 1px solid #ccc;
+  height: 25px;
+  color: white; /* Cor do texto do rodapé */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8em;
+}
