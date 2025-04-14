@@ -10,10 +10,11 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@thatopen/components": "^2.4.6",
-    "@thatopen/fragments": "2.4.x",
+    "@thatopen/components": "2.0",
+    "@thatopen/fragments": "latest",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "wasm-pack": "^0.13.1"
   },
   "devDependencies": {
     "@eslint/js": "^9.21.0",
