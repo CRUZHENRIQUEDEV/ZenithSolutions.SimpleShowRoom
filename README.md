@@ -17,7 +17,9 @@ A powerful cross-platform visualization tool that bridges the gap between 2D dra
 
 ## 📸 Screenshots
 
-*[Add screenshots of your application here]*
+![image](https://github.com/user-attachments/assets/5ba8c9d0-6522-4390-9b19-95057b3cd69a)
+![image](https://github.com/user-attachments/assets/3d0310fb-42da-4e15-92fd-8e3ae11ffe44)
+
 
 ## 🛠️ Technology Stack
 
@@ -40,9 +42,6 @@ The application is built with a component-based architecture featuring:
 ```bash
 # Clone the repository
 git clone https://github.com/yourusername/arch-viz-tool.git
-
-# Navigate to the project directory
-cd arch-viz-tool
 
 # Install dependencies
 npm install
