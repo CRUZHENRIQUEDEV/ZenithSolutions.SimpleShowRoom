@@ -73,12 +73,3 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-## 📬 Contact
-
-Your Name - [your.email@example.com](mailto:your.email@example.com)
-
-Project Link: [https://github.com/yourusername/arch-viz-tool](https://github.com/yourusername/arch-viz-tool)
-
----
-
-⭐️ From [YourName](https://github.com/yourusername)
